@@ -3,65 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms & Conditions - Calivio</title>
+    <title>Terms & Conditions — Calivio</title>
+    <meta name="description" content="Official Terms & Conditions and End User License Agreement (EULA) for Calivio iOS application.">
+    <meta name="author" content="Mehraab Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mehraabsingh.github.io/calivio-website/terms.html">
+    <meta property="og:title" content="Terms & Conditions — Calivio">
+    <meta property="og:description" content="End User License Agreement (EULA), subscription disclosures, and terms governing the use of Calivio on iOS.">
+    <meta property="og:image" content="https://mehraabsingh.github.io/calivio-website/assets/calivio-icon.png">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="assets/calivio-icon.png">
+    <link rel="apple-touch-icon" href="assets/calivio-icon.png">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="nav-content">
-            <a href="index.html" class="logo">Calivio</a>
-            <div class="nav-links">
-                <a href="support.html">Support</a>
+
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link" aria-label="Calivio Home">
+                <div class="brand-icon">
+                    <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                </div>
+                <span>Calivio</span>
+                <span class="brand-tag">iOS</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="active">Terms</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="nav-download-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                    </svg>
+                    <span>App Store</span>
+                </a>
             </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html" class="active">Terms & Conditions</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+            </ul>
+            <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" style="width: 100%; justify-content: center;">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                </svg>
+                <div class="app-store-text">
+                    <span class="app-store-subtitle">Download on the</span>
+                    <span class="app-store-title">App Store</span>
+                </div>
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Terms & Conditions</h1>
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container container-narrow">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>LEGAL & APP STORE EULA</span>
+                </div>
+                <h1 class="page-title">Terms & Conditions</h1>
+                <div class="page-meta">Last Updated: November 2026 · Standard Apple End User License Agreement (EULA)</div>
             </div>
         </section>
 
-        <section class="content-section container">
-            <h2>Acceptance of Terms</h2>
-            <p>By downloading or using the Calivio application, these terms will automatically apply to you. You should make sure therefore that you read them carefully before using the app. You are not allowed to copy or modify the app, any part of the app, or our trademarks in any way.</p>
+        <!-- Main Content Area -->
+        <div class="container">
+            <div class="legal-layout">
+                <!-- Sticky Sidebar Table of Contents -->
+                <aside class="legal-sidebar">
+                    <div class="toc-card">
+                        <div class="toc-title">Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#acceptance">1. Acceptance of Terms</a></li>
+                            <li><a href="#eula">2. Apple Standard EULA</a></li>
+                            <li><a href="#medical-disclaimer">3. Medical Disclaimer</a></li>
+                            <li><a href="#subscriptions">4. Auto-Renewing Subscriptions</a></li>
+                            <li><a href="#refunds">5. App Store Refunds</a></li>
+                            <li><a href="#acceptable-use">6. Acceptable Use & Conduct</a></li>
+                            <li><a href="#intellectual-property">7. Intellectual Property</a></li>
+                            <li><a href="#liability">8. Limitation of Liability</a></li>
+                            <li><a href="#modifications">9. Changes to Terms</a></li>
+                            <li><a href="#contact">10. Contact Information</a></li>
+                        </ul>
+                    </div>
+                </aside>
 
-            <h2>Subscription Terms</h2>
-            <p>Calivio is offered as a free download with optional premium features available via auto-renewing subscriptions ("Calivio Pro"). The free version includes basic tracking and insights. Calivio Pro unlocks advanced analytics, unlimited photo journaling, and priority support.</p>
+                <!-- Article Body -->
+                <article class="article-content">
+                    <!-- Medical Notice Callout -->
+                    <div class="callout-box warning">
+                        <div class="callout-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="callout-text">
+                            <strong>Important Medical Notice:</strong> Calivio is an informational wellness and nutritional logging application. It is NOT a medical device and does NOT provide medical advice, diagnosis, or clinical treatment. Always consult a physician or licensed medical professional before beginning any new diet or caloric deficit program.
+                        </div>
+                    </div>
 
-            <h2>Auto-Renewable Subscription Wording</h2>
-            <p>If you choose to purchase Calivio Pro, payment will be charged to your Apple ID account at the confirmation of purchase. The subscription automatically renews unless auto-renew is canceled at least 24 hours before the end of the current period. Your account will be charged for renewal within 24 hours prior to the end of the current period. You can manage and cancel your subscriptions by going to your account settings on the App Store after purchase.</p>
-            <p>Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.</p>
+                    <!-- Section 1 -->
+                    <section class="legal-section" id="acceptance">
+                        <h2>1. Acceptance of Terms</h2>
+                        <p>By downloading, installing, accessing, or using the Calivio mobile application ("Calivio", "the App"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to these Terms, you may not download, access, or use the App.</p>
+                        <p>These Terms constitute a legally binding agreement between you ("User" or "you") and Mehraab Singh ("Developer", "we", "us", or "our").</p>
+                    </section>
 
-            <h2>Refund Disclaimer</h2>
-            <p>All subscription purchases and refunds are handled entirely by Apple via the App Store. Calivio Inc. does not process payments directly and cannot issue refunds. If you wish to request a refund, you must do so through Apple's standard App Store refund process.</p>
+                    <!-- Section 2 -->
+                    <section class="legal-section" id="eula">
+                        <h2>2. Apple Standard End User License Agreement (EULA)</h2>
+                        <p>You acknowledge that these Terms are concluded between you and the Developer only, not with Apple Inc. ("Apple"). The Developer, not Apple, is solely responsible for Calivio and the content thereof. The license granted to you for the App is limited to a non-transferable license to use the App on any Apple-branded products running iOS that you own or control, as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions.</p>
+                        <ul>
+                            <li><strong>Maintenance and Support:</strong> The Developer is solely responsible for providing any maintenance and support services with respect to Calivio. You acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.</li>
+                            <li><strong>Warranty:</strong> To the maximum extent permitted by applicable law, Apple will have no warranty obligation whatsoever with respect to the App, and any claims, losses, liabilities, damages, costs, or expenses attributable to any failure to conform to any warranty will be the sole responsibility of the Developer.</li>
+                            <li><strong>Third-Party Beneficiary:</strong> Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary thereof.</li>
+                        </ul>
+                    </section>
 
-            <h2>User Responsibilities</h2>
-            <p>You are responsible for maintaining the confidentiality of your device and account access. Calivio is not a medical device. The information provided by the app is for general wellness purposes only and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+                    <!-- Section 3 -->
+                    <section class="legal-section" id="medical-disclaimer">
+                        <h2>3. Health & Medical Information Disclaimer</h2>
+                        <p>Calivio provides calorie calculations, macronutrient breakdowns, food recognition estimates, and Apple HealthKit integration for personal informational and educational purposes only.</p>
+                        <ul>
+                            <li><strong>Not Medical Advice:</strong> The App does not offer medical advice, medical diagnoses, nutritional therapy, or healthcare directives. None of the recommendations, targets, or analytics provided by Calivio should be construed as medical diagnosis or treatment.</li>
+                            <li><strong>Consult Your Healthcare Provider:</strong> You should always seek the guidance of your physician, registered dietitian, or qualified healthcare provider with any questions you may have regarding a medical condition, eating disorder recovery, pregnancy, or dietary modifications.</li>
+                            <li><strong>Assumption of Risk:</strong> You expressly agree that any dietary changes, caloric restrictions, or athletic activities you undertake based on information in Calivio are performed solely at your own risk.</li>
+                        </ul>
+                    </section>
 
-            <h2>Limitation of Liability</h2>
-            <p>To the maximum extent permitted by applicable law, in no event shall Calivio Inc., its affiliates, agents, directors, employees, suppliers or licensors be liable for any indirect, punitive, incidental, special, consequential or exemplary damages, including without limitation damages for loss of profits, goodwill, use, data or other intangible losses, arising out of or relating to the use of, or inability to use, this service.</p>
+                    <!-- Section 4 -->
+                    <section class="legal-section" id="subscriptions">
+                        <h2>4. Calivio Pro Auto-Renewing Subscriptions</h2>
+                        <p>Calivio is offered as a free download with optional premium features accessible via auto-renewing subscriptions ("Calivio Pro"). In compliance with Apple App Store Review Guideline 3.1.2:</p>
+                        <ul>
+                            <li><strong>Subscription Tiers:</strong> Calivio Pro is available as an auto-renewing subscription on a monthly or annual billing cycle, unlocking features such as unlimited AI food scanning, deep historical analytics, and priority customer support.</li>
+                            <li><strong>Payment:</strong> Payment will be charged to your Apple ID account at the confirmation of purchase.</li>
+                            <li><strong>Automatic Renewal:</strong> Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current billing period.</li>
+                            <li><strong>Renewal Billing:</strong> Your account will be charged for renewal within 24 hours prior to the end of the current period at the original subscription price.</li>
+                            <li><strong>Subscription Management:</strong> You can manage and cancel your subscriptions at any time by going to your iPhone <em>Settings &gt; [Your Apple ID] &gt; Subscriptions</em> after purchase.</li>
+                            <li><strong>Free Trials:</strong> Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription to that publication, where applicable.</li>
+                        </ul>
+                    </section>
 
-            <h2>Changes to These Terms</h2>
-            <p>We may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Terms and Conditions on this page.</p>
+                    <!-- Section 5 -->
+                    <section class="legal-section" id="refunds">
+                        <h2>5. In-App Purchases & Refund Policy</h2>
+                        <p>All in-app purchases and subscription transactions are processed directly by Apple via the iOS App Store. As an independent developer, Mehraab Singh does not store or process your financial payment methods and cannot issue direct refunds.</p>
+                        <p>To request a refund for any purchase made within Calivio, you must submit a claim directly through Apple's official refund portal at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a> according to Apple's standard terms.</p>
+                    </section>
 
-            <h2>Contact</h2>
-            <p>For any questions regarding these terms, please contact us at <a href="mailto:legal@calivio.com">legal@calivio.com</a>.</p>
-        </section>
+                    <!-- Section 6 -->
+                    <section class="legal-section" id="acceptable-use">
+                        <h2>6. Acceptable Use & Conduct</h2>
+                        <p>You agree to use Calivio strictly for lawful, personal, non-commercial purposes. You agree that you will not:</p>
+                        <ul>
+                            <li>Decompile, reverse engineer, disassemble, or attempt to derive the source code of the App.</li>
+                            <li>Circumvent or attempt to disable any security checks, subscription paywalls, or digital rights management mechanisms.</li>
+                            <li>Use automated scripts or scrapers to harvest data from our nutritional database or backend API endpoints.</li>
+                            <li>Use the App in any manner that could interfere with, disrupt, or impair our infrastructure or networks.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 7 -->
+                    <section class="legal-section" id="intellectual-property">
+                        <h2>7. Intellectual Property Rights</h2>
+                        <p>All intellectual property rights in and to Calivio—including the user interface design, logos, graphics, software algorithms, animations, and proprietary content—are the exclusive property of Mehraab Singh or licensors. Apple, iPhone, Apple Health, and HealthKit are registered trademarks of Apple Inc.</p>
+                    </section>
+
+                    <!-- Section 8 -->
+                    <section class="legal-section" id="liability">
+                        <h2>8. Limitation of Liability & Warranty Disclaimer</h2>
+                        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CALIVIO IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. THE DEVELOPER DISCLAIMS ALL WARRANTIES, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                        <p>IN NO EVENT SHALL MEHRAAB SINGH BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF DATA, MEDICAL COMPLICATIONS, OR FINANCIAL LOSS, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OR INABILITY TO USE THE APP.</p>
+                    </section>
+
+                    <!-- Section 9 -->
+                    <section class="legal-section" id="modifications">
+                        <h2>9. Changes to These Terms</h2>
+                        <p>We reserve the right to revise or modify these Terms at any time. Any changes will be reflected on this page with an updated "Last Updated" date. Your continued use of Calivio after any revisions constitutes your acceptance of the updated Terms.</p>
+                    </section>
+
+                    <!-- Section 10 -->
+                    <section class="legal-section" id="contact">
+                        <h2>10. Contact Information</h2>
+                        <p>If you have questions, legal inquiries, or notices regarding these Terms, please contact:</p>
+                        <p>
+                            <strong>Provider / Developer:</strong> Mehraab Singh<br>
+                            <strong>Direct Legal Email:</strong> <a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a><br>
+                            <strong>Official Website:</strong> <a href="https://mehraabsingh.github.io/calivio-website/">https://mehraabsingh.github.io/calivio-website/</a><br>
+                            <strong>App Store Identifier:</strong> Calivio (ID: 6775261027)
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="support.html">Support</a>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-link">
+                        <div class="brand-icon">
+                            <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                        </div>
+                        <span>Calivio</span>
+                    </a>
+                    <p class="footer-tagline">AI-Powered Calorie & Nutrition Tracker for iOS. Developed with passion for privacy and health by Mehraab Singh.</p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Legal & Policy</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="#eula">Standard Apple EULA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Support & Contact</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="support.html#faq">FAQ & Help</a></li>
+                        <li><a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2026 Calivio Inc. All rights reserved.
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Mehraab Singh. All rights reserved.</div>
+                <div class="footer-compliance-note">Apple, the Apple logo, iPhone, and HealthKit are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</div>
             </div>
         </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

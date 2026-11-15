@@ -3,64 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Calivio</title>
+    <title>Privacy Policy — Calivio</title>
+    <meta name="description" content="Official Privacy Policy for Calivio iOS application. Learn how we protect your health, nutrition, HealthKit, and camera data.">
+    <meta name="author" content="Mehraab Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mehraabsingh.github.io/calivio-website/privacy.html">
+    <meta property="og:title" content="Privacy Policy — Calivio">
+    <meta property="og:description" content="Your health data belongs to you. Transparent privacy policies adhering strictly to Apple HealthKit and App Store guidelines.">
+    <meta property="og:image" content="https://mehraabsingh.github.io/calivio-website/assets/calivio-icon.png">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="assets/calivio-icon.png">
+    <link rel="apple-touch-icon" href="assets/calivio-icon.png">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="nav-content">
-            <a href="index.html" class="logo">Calivio</a>
-            <div class="nav-links">
-                <a href="support.html">Support</a>
+
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link" aria-label="Calivio Home">
+                <div class="brand-icon">
+                    <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                </div>
+                <span>Calivio</span>
+                <span class="brand-tag">iOS</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="nav-download-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                    </svg>
+                    <span>App Store</span>
+                </a>
             </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="privacy.html" class="active">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+            </ul>
+            <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" style="width: 100%; justify-content: center;">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                </svg>
+                <div class="app-store-text">
+                    <span class="app-store-subtitle">Download on the</span>
+                    <span class="app-store-title">App Store</span>
+                </div>
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>Privacy Policy</h1>
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container container-narrow">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>LEGAL & APP STORE COMPLIANCE</span>
+                </div>
+                <h1 class="page-title">Privacy Policy</h1>
+                <div class="page-meta">Last Updated: November 2026 · App Store Connect Compliance Verified</div>
             </div>
         </section>
 
-        <section class="content-section container">
-            <h2>Introduction</h2>
-            <p>At Calivio, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information when you use the Calivio iOS application. Our fundamental principle is that your health data belongs to you.</p>
+        <!-- Main Content Area -->
+        <div class="container">
+            <div class="legal-layout">
+                <!-- Sticky Sidebar Table of Contents -->
+                <aside class="legal-sidebar">
+                    <div class="toc-card">
+                        <div class="toc-title">Contents</div>
+                        <ul class="toc-list">
+                            <li><a href="#introduction">1. Introduction & Principles</a></li>
+                            <li><a href="#healthkit">2. Apple HealthKit Disclosure</a></li>
+                            <li><a href="#camera">3. Camera & Vision AI</a></li>
+                            <li><a href="#photo-library">4. Photo Library Access</a></li>
+                            <li><a href="#data-collection">5. Data Collection & Sync</a></li>
+                            <li><a href="#data-deletion">6. Data Retention & Deletion</a></li>
+                            <li><a href="#analytics">7. Analytics & Third Parties</a></li>
+                            <li><a href="#children">8. Children's Privacy</a></li>
+                            <li><a href="#user-rights">9. Your Global Privacy Rights</a></li>
+                            <li><a href="#contact">10. Contact Information</a></li>
+                        </ul>
+                    </div>
+                </aside>
 
-            <h2>HealthKit Usage Disclosure</h2>
-            <p>Calivio requests read and write access to specific data types in Apple's HealthKit, such as Step Count, Sleep Analysis, and Heart Rate. This integration is strictly used to provide you with comprehensive wellness insights within the app. Your HealthKit data is never used for marketing or advertising purposes. All HealthKit data remains locally on your device and is not transmitted to our servers without your explicit, opt-in consent for secure cloud backup.</p>
+                <!-- Article Body -->
+                <article class="article-content">
+                    <!-- Core Callout -->
+                    <div class="callout-box">
+                        <div class="callout-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="callout-text">
+                            <strong>Our Core Privacy Guarantee:</strong> Your health and nutritional data is uniquely yours. Calivio does not sell your personal information, does not display advertisements, and never uses Apple HealthKit data for marketing, advertising, or use-based data mining.
+                        </div>
+                    </div>
 
-            <h2>Camera Usage Disclosure</h2>
-            <p>Our app requires access to your device's camera to allow you to take photos for your visual wellness journal. Photos taken using the app are processed locally on your device and are not uploaded to our servers. We do not use facial recognition or any other biometric processing on your images.</p>
+                    <!-- Section 1 -->
+                    <section class="legal-section" id="introduction">
+                        <h2>1. Introduction & Core Privacy Principles</h2>
+                        <p>At Calivio (operated and developed by Mehraab Singh, "we", "us", or "our"), your privacy is our foundational priority. This Privacy Policy governs your use of the Calivio mobile application for iOS and describes our policies on the collection, storage, use, and disclosure of personal data when you use the app.</p>
+                        <p>Our fundamental philosophy is straightforward: health tracking should be empowering, private, and secure. We design our architecture to process information locally on your device whenever possible, minimizing cloud footprint and ensuring you retain absolute ownership over your health journey.</p>
+                    </section>
 
-            <h2>Photo Library Usage Disclosure</h2>
-            <p>Calivio requests access to your Photo Library so you can import existing photos into your wellness journal. We only access the specific photos you select within the app's image picker. We do not scan your photo library or upload unselected images to our servers.</p>
+                    <!-- Section 2 -->
+                    <section class="legal-section" id="healthkit">
+                        <h2>2. Apple HealthKit Data Usage & Safeguards</h2>
+                        <p>Calivio integrates with Apple's HealthKit framework (via iOS Health app) to provide comprehensive, real-time health and nutritional tracking. In strict accordance with the Apple App Store Review Guidelines and HealthKit Developer Terms:</p>
+                        <ul>
+                            <li><strong>Read & Write Permissions:</strong> With your explicit authorization, Calivio may read and write specific HealthKit data types, including Dietary Energy (calories), Active Energy Burned, Dietary Macronutrients (Protein, Carbohydrates, Total Fat), Dietary Water, and Weight.</li>
+                            <li><strong>No Advertising or Marketing:</strong> HealthKit data is never used or disclosed to third parties for marketing, advertising, profiling, or other use-based data mining purposes.</li>
+                            <li><strong>No Sale to Data Brokers:</strong> We strictly prohibit selling, leasing, or trading any HealthKit data to third-party data brokers, insurers, or advertising platforms.</li>
+                            <li><strong>On-Device Priority:</strong> Your HealthKit data is read dynamically on your device to calculate your remaining caloric budget and macronutrient balance. It is not transmitted to external cloud servers unless you have enabled optional encrypted multi-device backup.</li>
+                            <li><strong>User Control:</strong> You can grant, modify, or revoke Calivio's access to Apple Health at any time by navigating to your iPhone's <em>Settings &gt; Health &gt; Data Access &amp; Devices &gt; Calivio</em>.</li>
+                        </ul>
+                    </section>
 
-            <h2>Data Collection Practices</h2>
-            <p>We minimize data collection. The core functionality of Calivio operates entirely on-device. If you create an optional Calivio Account for cross-device syncing, we collect your email address, basic profile information, and an encrypted backup of your wellness data. We utilize industry-standard end-to-end encryption for all synced data.</p>
-            <p>We may collect anonymous, aggregated crash reports and usage analytics to improve the app's stability and performance, provided you have opted in to share analytics with developers via your iOS device settings.</p>
+                    <!-- Section 3 -->
+                    <section class="legal-section" id="camera">
+                        <h2>3. Camera & Vision AI Processing</h2>
+                        <p>Calivio requests permission to access your device's camera to provide computer vision-based food logging and barcode scanning.</p>
+                        <ul>
+                            <li><strong>Food Scanning:</strong> When you point your camera at a meal or food item, the visual input is used exclusively to recognize food items, estimate portion sizes, and calculate caloric and macronutrient values.</li>
+                            <li><strong>Barcode Scanning:</strong> When scanning food packaging, the camera identifies barcode symbologies (e.g., UPC, EAN) to query our nutritional database.</li>
+                            <li><strong>No Facial or Biometric Recognition:</strong> We do not capture, record, analyze, or process facial geometry, biometric signatures, or background human identities in your photos.</li>
+                            <li><strong>Transient Processing:</strong> Photos captured for food analysis are processed transiently and are not archived on public servers or shared with unauthorized third parties.</li>
+                        </ul>
+                    </section>
 
-            <h2>Account Deletion Information</h2>
-            <p>You have the right to delete your Calivio account and all associated data at any time. To do so, open the Calivio app, navigate to Settings > Account, and tap "Delete Account". This action is irreversible and will immediately purge all your personal data from our cloud servers. Locally stored data on your device must be deleted by uninstalling the application.</p>
+                    <!-- Section 4 -->
+                    <section class="legal-section" id="photo-library">
+                        <h2>4. Photo Library Access Disclosure</h2>
+                        <p>If you choose to log a meal using an existing image from your iPhone's camera roll, Calivio requests access to your Photo Library using Apple's limited photo picker. We only access and inspect the specific photo(s) you actively select. Calivio never scans, indexes, or browses your wider photo library.</p>
+                    </section>
 
-            <h2>Contact Us</h2>
-            <p>If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact our Privacy Team at:</p>
-            <p><a href="mailto:privacy@calivio.com">privacy@calivio.com</a></p>
-            <p>Calivio Inc.<br>1 Infinite Loop, Cupertino, CA 95014</p>
-        </section>
+                    <!-- Section 5 -->
+                    <section class="legal-section" id="data-collection">
+                        <h2>5. Data Collection Practices & Cloud Sync</h2>
+                        <p>We practice strict data minimization. Depending on how you interact with Calivio:</p>
+                        <ul>
+                            <li><strong>Anonymous Guest Mode:</strong> You can use Calivio without creating an account. In this mode, all logs, nutritional calculations, custom foods, and settings reside solely on your device.</li>
+                            <li><strong>Optional Calivio Account:</strong> If you choose to enable cloud backup across devices, we collect your email address and an encrypted replica of your meal logs and preference settings. All synced data in transit and at rest is protected with industry-standard encryption protocols (TLS 1.3 / AES-256).</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 6 -->
+                    <section class="legal-section" id="data-deletion">
+                        <h2>6. Data Retention & Account Deletion Rights</h2>
+                        <p>In full compliance with Apple App Store Guideline 5.1.1(v), Calivio gives users complete, autonomous control to delete their account and personal data directly from within the iOS application:</p>
+                        <ul>
+                            <li><strong>In-App Deletion:</strong> Open Calivio &gt; Navigate to <em>Settings &gt; Account</em> &gt; Tap <em>"Delete Account"</em>. Confirming this action immediately and irreversibly deletes your account record, email, and synced meal logs from our cloud infrastructure.</li>
+                            <li><strong>Local Data:</strong> To remove local on-device database caches, simply uninstall the Calivio application from your iOS home screen.</li>
+                            <li><strong>Direct Request:</strong> You may also submit a deletion request by emailing <a href="mailto:mrb@mehraab.ninja?subject=Calivio%20Account%20Deletion%20Request">mrb@mehraab.ninja</a> with your registered email, and our team will process the purge within 48 hours.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 7 -->
+                    <section class="legal-section" id="analytics">
+                        <h2>7. Analytics & Third-Party Service Providers</h2>
+                        <p>We do not integrate third-party advertising SDKs or tracking pixels. We may collect anonymous, aggregated crash diagnostic reports (such as via Apple's native App Store Diagnostics) to diagnose unexpected crashes and improve memory management, provided you have opted in to share diagnostics with developers in your iOS system settings.</p>
+                    </section>
+
+                    <!-- Section 8 -->
+                    <section class="legal-section" id="children">
+                        <h2>8. Children's Online Privacy (COPPA Compliance)</h2>
+                        <p>Calivio is not directed to children under the age of 13 (or under 16 in the European Union). We do not knowingly collect or solicit personal data from children. If we discover that personal information from a child has been collected, we will take immediate steps to delete that data from our servers.</p>
+                    </section>
+
+                    <!-- Section 9 -->
+                    <section class="legal-section" id="user-rights">
+                        <h2>9. Your Global Privacy Rights (GDPR & CCPA / CPRA)</h2>
+                        <p>Regardless of your geographic location, we respect your statutory privacy rights, including:</p>
+                        <ul>
+                            <li>The right to know what personal data is collected and processed.</li>
+                            <li>The right to request a copy or export of your personal data.</li>
+                            <li>The right to rectify inaccurate information.</li>
+                            <li>The right to request immediate deletion ("Right to be Forgotten").</li>
+                            <li>The right to non-discrimination for exercising your privacy privileges.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 10 -->
+                    <section class="legal-section" id="contact">
+                        <h2>10. Contact Information</h2>
+                        <p>If you have any questions, inquiries, or feedback regarding this Privacy Policy or our security practices, please contact our privacy compliance team directly:</p>
+                        <p>
+                            <strong>Provider / Developer:</strong> Mehraab Singh<br>
+                            <strong>Direct Privacy Email:</strong> <a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a><br>
+                            <strong>Official Website:</strong> <a href="https://mehraabsingh.github.io/calivio-website/">https://mehraabsingh.github.io/calivio-website/</a><br>
+                            <strong>App Store Identifier:</strong> Calivio (ID: 6775261027)
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="support.html">Support</a>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-link">
+                        <div class="brand-icon">
+                            <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                        </div>
+                        <span>Calivio</span>
+                    </a>
+                    <p class="footer-tagline">AI-Powered Calorie & Nutrition Tracker for iOS. Developed with passion for privacy and health by Mehraab Singh.</p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Legal & Policy</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#eula">Standard Apple EULA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Support & Contact</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="support.html#faq">FAQ & Help</a></li>
+                        <li><a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2026 Calivio Inc. All rights reserved.
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Mehraab Singh. All rights reserved.</div>
+                <div class="footer-compliance-note">Apple, the Apple logo, iPhone, and HealthKit are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</div>
             </div>
         </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

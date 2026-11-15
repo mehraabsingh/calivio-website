@@ -3,54 +3,434 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calivio - Your Personal Wellness Companion</title>
-    <meta name="description" content="Discover Calivio, the premium health and wellness tracking app for your iOS devices. Syncs with Apple Health.">
+    <title>Calivio — AI-Powered Calorie & Nutrition Tracker for iOS</title>
+    <meta name="description" content="Calivio combines intelligent food scanning, HealthKit integration, and macro tracking into a private, beautifully crafted iOS experience. Download on the App Store.">
+    <meta name="author" content="Mehraab Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mehraabsingh.github.io/calivio-website/">
+    <meta property="og:title" content="Calivio — AI-Powered Calorie & Nutrition Tracker">
+    <meta property="og:description" content="Understand your nutrition. Effortlessly. Intelligent food scanning, HealthKit integration, and macro tracking for iOS.">
+    <meta property="og:image" content="https://mehraabsingh.github.io/calivio-website/assets/calivio-icon.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mehraabsingh.github.io/calivio-website/">
+    <meta property="twitter:title" content="Calivio — AI-Powered Calorie & Nutrition Tracker">
+    <meta property="twitter:description" content="Understand your nutrition. Effortlessly. Intelligent food scanning, HealthKit integration, and macro tracking for iOS.">
+    <meta property="twitter:image" content="https://mehraabsingh.github.io/calivio-website/assets/calivio-icon.png">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="assets/calivio-icon.png">
+    <link rel="apple-touch-icon" href="assets/calivio-icon.png">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="nav-content">
-            <a href="index.html" class="logo">Calivio</a>
-            <div class="nav-links">
-                <a href="support.html">Support</a>
+
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link" aria-label="Calivio Home">
+                <div class="brand-icon">
+                    <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                </div>
+                <span>Calivio</span>
+                <span class="brand-tag">iOS</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#features" class="active">Features</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="support.html">Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="nav-download-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                    </svg>
+                    <span>App Store</span>
+                </a>
             </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="support.html">Customer Support</a></li>
+            </ul>
+            <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" style="width: 100%; justify-content: center;">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                </svg>
+                <div class="app-store-text">
+                    <span class="app-store-subtitle">Download on the</span>
+                    <span class="app-store-title">App Store</span>
+                </div>
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Understand your health.</h1>
-            <p>Calivio integrates seamlessly with your daily life to provide deep insights into your physical well-being. Beautiful, private, and secure.</p>
-            <a href="https://apps.apple.com/" class="download-btn">Download on the App Store</a>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>AVAILABLE ON THE APP STORE · iOS 17+</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Understand your nutrition.<br>
+                    <span class="highlight-emerald">Effortlessly.</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Calivio combines intelligent food scanning, HealthKit integration, and macro tracking into a private, beautifully crafted iOS experience.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" aria-label="Download Calivio on the Apple App Store">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                        </svg>
+                        <div class="app-store-text">
+                            <span class="app-store-subtitle">Download on the</span>
+                            <span class="app-store-title">App Store</span>
+                        </div>
+                    </a>
+
+                    <a href="#features" class="secondary-btn">
+                        <span>Explore Features</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Interactive Liquid Glass App Showcase -->
+                <div class="showcase-wrapper">
+                    <div class="showcase-glow"></div>
+                    <div class="showcase-card">
+                        <div class="showcase-header">
+                            <div class="showcase-user">
+                                <div class="showcase-avatar">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="showcase-user-title">Today's Nutrition Summary</div>
+                                    <div class="showcase-user-sub">Synced live with Apple Health</div>
+                                </div>
+                            </div>
+                            <div class="showcase-healthkit-badge">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                </svg>
+                                <span>Apple HealthKit Connected</span>
+                            </div>
+                        </div>
+
+                        <div class="macro-grid">
+                            <div class="calories-card">
+                                <div class="calories-info">
+                                    <h4>Calories Remaining</h4>
+                                    <div class="calories-val">1,840</div>
+                                    <div class="calories-target">Target: 2,400 kcal · 560 kcal logged</div>
+                                </div>
+                                <div class="progress-rings">
+                                    <svg width="68" height="68" viewBox="0 0 36 36">
+                                        <path stroke="rgba(255, 255, 255, 0.08)" stroke-width="3.5" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                        <path stroke="#10B981" stroke-dasharray="77, 100" stroke-width="3.5" stroke-linecap="round" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="macro-bars">
+                                <div class="macro-bar-item">
+                                    <div class="macro-bar-label">
+                                        <span>Protein</span>
+                                        <span>135g / 165g</span>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill protein"></div>
+                                    </div>
+                                </div>
+                                <div class="macro-bar-item">
+                                    <div class="macro-bar-label">
+                                        <span>Carbohydrates</span>
+                                        <span>180g / 260g</span>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill carbs"></div>
+                                    </div>
+                                </div>
+                                <div class="macro-bar-item">
+                                    <div class="macro-bar-label">
+                                        <span>Healthy Fats</span>
+                                        <span>48g / 70g</span>
+                                    </div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill fats"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scanner-card">
+                            <div class="scanner-left">
+                                <div class="scanner-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                                        <circle cx="12" cy="13" r="4"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="scanner-title">AI Instant Food Scan: Grilled Salmon & Quinoa</div>
+                                    <div class="scanner-meta">520 kcal · 42g Protein · 38g Carbs · 18g Fat</div>
+                                </div>
+                            </div>
+                            <span class="scanner-badge">98.4% AI Match · On-Device</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="features">
-            <div class="feature">
-                <h3>HealthKit Integration</h3>
-                <p>Seamlessly syncs with Apple Health to aggregate your steps, heart rate, and sleep data in one beautiful dashboard.</p>
+        <!-- App Store Information Specs Strip -->
+        <section class="specs-strip">
+            <div class="container">
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="spec-label">Provider</div>
+                        <div class="spec-val">Mehraab Singh</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Category</div>
+                        <div class="spec-val">Health & Fitness</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Compatibility</div>
+                        <div class="spec-val">iOS 17.0 or later</div>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-label">Customer Rating</div>
+                        <div class="spec-val gold">4.8 ★★★★★</div>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Visual Progress</h3>
-                <p>Use your camera to securely capture and track physical wellness changes over time directly on your device.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <div class="badge-pill">
+                        <span class="badge-dot"></span>
+                        <span>CRAFTED FOR PEAK HEALTH</span>
+                    </div>
+                    <h2 class="section-title">Everything you need to master your nutrition.</h2>
+                    <p class="section-desc">Designed following Apple Human Interface Guidelines for an experience that feels natively integrated into iOS.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="22" y1="12" x2="18" y2="12"></line>
+                                <line x1="6" y1="12" x2="2" y2="12"></line>
+                                <line x1="12" y1="6" x2="12" y2="2"></line>
+                                <line x1="12" y1="22" x2="12" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3>AI Food & Barcode Scanning</h3>
+                        <p>Instant calorie and macro detection powered by vision AI. Snap a photo of any home-cooked meal or packaged food item to break down nutritional density in seconds.</p>
+                        <div class="feature-footer-tags">
+                            <span class="feature-tag">Computer Vision</span>
+                            <span class="feature-tag">Barcode Lookup</span>
+                            <span class="feature-tag">Instant Macros</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3>Apple HealthKit Integration</h3>
+                        <p>Seamless two-way HealthKit synchronization. Sync active energy burned, dietary energy, water intake, weight, and workouts without tedious manual double-entry.</p>
+                        <div class="feature-footer-tags">
+                            <span class="feature-tag">HealthKit</span>
+                            <span class="feature-tag">Active Energy</span>
+                            <span class="feature-tag">Bi-directional</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3>Private & On-Device Security</h3>
+                        <p>Your health and dietary information remains strictly yours. No third-party data broker monetization, zero invasive advertising SDKs, and full on-device encryption.</p>
+                        <div class="feature-footer-tags">
+                            <span class="feature-tag">Zero Ads</span>
+                            <span class="feature-tag">No Data Selling</span>
+                            <span class="feature-tag">Encrypted</span>
+                        </div>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                        <h3>Daily Nutrition Analytics</h3>
+                        <p>Deep visual progress charts, dynamic macro targets, micronutrient breakdowns, and adaptive caloric budgets designed to build sustainable lifestyle habits.</p>
+                        <div class="feature-footer-tags">
+                            <span class="feature-tag">Micro Goals</span>
+                            <span class="feature-tag">Trend Analysis</span>
+                            <span class="feature-tag">Weekly Reports</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
-                <h3>Privacy First</h3>
-                <p>Your data never leaves your device unless you choose to sync it. We believe your health data is uniquely yours.</p>
+        </section>
+
+        <!-- Compliance & Security Highlight Banner -->
+        <section class="container compliance-banner">
+            <div class="banner-glass">
+                <div>
+                    <h3 class="banner-title">Built for iOS with Privacy at Its Core.</h3>
+                    <p class="banner-desc">Calivio was engineered from the ground up to respect Apple's strictest privacy guidelines. Your HealthKit data never leaves your control.</p>
+                    <a href="privacy.html" class="secondary-btn">Read Full Privacy Policy &rarr;</a>
+                </div>
+                <div>
+                    <ul class="checklist">
+                        <li class="checklist-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span>HealthKit data is never used for advertising or marketing.</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span>Camera access is used strictly for food and barcode recognition.</span>
+                        </li>
+                        <li class="checklist-item">
+                            <div class="check-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            </div>
+                            <span>Zero trackers, zero cross-site ad brokers, and full account deletion at any time.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 class="cta-title">Start your nutrition journey today.</h2>
+                    <p class="cta-desc">Download Calivio on your iPhone and start tracking your meals and macros with intelligent simplicity.</p>
+                    <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" aria-label="Download Calivio on the Apple App Store">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                        </svg>
+                        <div class="app-store-text">
+                            <span class="app-store-subtitle">Download on the</span>
+                            <span class="app-store-title">App Store</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="support.html">Support</a>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-link">
+                        <div class="brand-icon">
+                            <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                        </div>
+                        <span>Calivio</span>
+                    </a>
+                    <p class="footer-tagline">AI-Powered Calorie & Nutrition Tracker for iOS. Developed with passion for privacy and health by Mehraab Singh.</p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Legal & Policy</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#eula">Standard Apple EULA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Support & Contact</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="support.html#faq">FAQ & Help</a></li>
+                        <li><a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2026 Calivio Inc. All rights reserved.
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Mehraab Singh. All rights reserved.</div>
+                <div class="footer-compliance-note">Apple, the Apple logo, iPhone, and HealthKit are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</div>
             </div>
         </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>

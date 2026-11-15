@@ -3,67 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Calivio</title>
+    <title>Customer Support & Help Center — Calivio</title>
+    <meta name="description" content="Calivio Customer Support Portal. Frequently Asked Questions, Apple Health sync troubleshooting, subscription management, and direct contact.">
+    <meta name="author" content="Mehraab Singh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mehraabsingh.github.io/calivio-website/support.html">
+    <meta property="og:title" content="Support & Help Center — Calivio">
+    <meta property="og:description" content="Dedicated customer support for Calivio on iOS. Get help with HealthKit syncing, subscriptions, and AI scanning.">
+    <meta property="og:image" content="https://mehraabsingh.github.io/calivio-website/assets/calivio-icon.png">
+
+    <!-- Favicon & Apple Touch Icon -->
+    <link rel="icon" type="image/png" href="assets/calivio-icon.png">
+    <link rel="apple-touch-icon" href="assets/calivio-icon.png">
+    
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="nav-content">
-            <a href="index.html" class="logo">Calivio</a>
-            <div class="nav-links">
-                <a href="support.html">Support</a>
+
+    <!-- Frosted Glass Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand-link" aria-label="Calivio Home">
+                <div class="brand-icon">
+                    <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                </div>
+                <span>Calivio</span>
+                <span class="brand-tag">iOS</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="support.html" class="active">Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="nav-download-btn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                    </svg>
+                    <span>App Store</span>
+                </a>
             </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="support.html" class="active">Customer Support</a></li>
+            </ul>
+            <a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer" class="app-store-btn" style="width: 100%; justify-content: center;">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.93-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.06 1.71-.93 2.73 1 .08 2.02-.48 2.63-1.23z"/>
+                </svg>
+                <div class="app-store-text">
+                    <span class="app-store-subtitle">Download on the</span>
+                    <span class="app-store-title">App Store</span>
+                </div>
+            </a>
         </div>
     </header>
 
     <main>
-        <section class="page-header">
-            <div class="container">
-                <h1>How can we help?</h1>
+        <!-- Page Header -->
+        <section class="page-hero">
+            <div class="container container-narrow">
+                <div class="badge-pill">
+                    <span class="badge-dot"></span>
+                    <span>OFFICIAL APP STORE SUPPORT PORTAL</span>
+                </div>
+                <h1 class="page-title">How can we help?</h1>
+                <div class="page-meta">Guaranteed direct support for Calivio on iOS · Response within 24 hours</div>
             </div>
         </section>
 
-        <section class="content-section container">
-            <h2>Frequently Asked Questions</h2>
-            
-            <div class="faq-item">
-                <div class="faq-question">How do I cancel my subscription?</div>
-                <div class="faq-answer">All subscriptions are managed by Apple. To cancel, go to your iPhone's Settings > [Your Name] > Subscriptions, tap on Calivio, and select "Cancel Subscription".</div>
-            </div>
+        <!-- Direct Contact Cards -->
+        <section class="container">
+            <div class="support-cards">
+                <!-- General Support -->
+                <div class="support-card">
+                    <div class="support-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Direct Email Support</h3>
+                    <p>Have questions about features, feedback, or need personal onboarding assistance? Reach our engineering team.</p>
+                    <a href="mailto:mrb@mehraab.ninja?subject=Calivio%20Support%20Inquiry" class="support-action-btn">
+                        <span>mrb@mehraab.ninja</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Why isn't my HealthKit data syncing?</div>
-                <div class="faq-answer">Please ensure that you have granted Calivio the necessary permissions in the Apple Health app. Go to the Health app > Sharing > Apps > Calivio and verify that all toggles are turned on.</div>
-            </div>
+                <!-- Bug Reporting -->
+                <div class="support-card">
+                    <div class="support-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3>Report an Issue / Bug</h3>
+                    <p>Found a discrepancy in food macros, a scan glitch, or a crash? Submit a diagnostic report with iOS details.</p>
+                    <a href="mailto:mrb@mehraab.ninja?subject=Calivio%20Bug%20Report" class="support-action-btn">
+                        <span>Submit Bug Report</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Is my data backed up securely?</div>
-                <div class="faq-answer">If you have created a Calivio Account, your data is securely backed up using end-to-end encryption. Without an account, your data remains solely on your device.</div>
+                <!-- Account & Data Requests -->
+                <div class="support-card">
+                    <div class="support-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="3 6 5 6 21 6"></polyline>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg>
+                    </div>
+                    <h3>Data Deletion & Privacy</h3>
+                    <p>Request account removal or export your logged meal and nutrition history pursuant to GDPR / CCPA.</p>
+                    <a href="mailto:mrb@mehraab.ninja?subject=Calivio%20Data%20Deletion%20Request" class="support-action-btn">
+                        <span>Request Deletion</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="faq-item">
-                <div class="faq-question">How do I request a refund?</div>
-                <div class="faq-answer">Since Apple handles all App Store payments, you must request refunds directly from Apple through reportaproblem.apple.com.</div>
+        <!-- Interactive FAQ Accordion -->
+        <section class="section faq-section" id="faq">
+            <div class="container container-narrow">
+                <div class="section-header">
+                    <div class="badge-pill">
+                        <span class="badge-dot"></span>
+                        <span>FREQUENTLY ASKED QUESTIONS</span>
+                    </div>
+                    <h2 class="section-title">Common Questions & Solutions</h2>
+                    <p class="section-desc">Quick answers to help you configure HealthKit, manage subscriptions, and optimize food scanning.</p>
+                </div>
+
+                <div class="faq-group">
+                    <!-- FAQ 1 -->
+                    <div class="faq-accordion-item open">
+                        <button class="faq-question-btn" aria-expanded="true">
+                            <span>How do I sync Calivio with Apple Health?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                To grant or refresh Apple Health permissions:
+                                <ol>
+                                    <li>Open your iPhone's <strong>Settings</strong> app.</li>
+                                    <li>Scroll down and tap <strong>Health</strong> &gt; <strong>Data Access &amp; Devices</strong>.</li>
+                                    <li>Select <strong>Calivio</strong> from the list of applications.</li>
+                                    <li>Tap <strong>Turn On All Categories</strong> to enable reading and writing Dietary Energy, Active Calories, and Macronutrients.</li>
+                                </ol>
+                                Once granted, Calivio updates your caloric expenditure and nutrition logs in real time.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>How do I manage, modify, or cancel my Calivio subscription?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                In accordance with Apple App Store guidelines, all subscriptions are billed and securely managed directly by Apple under your Apple ID:
+                                <ol>
+                                    <li>Open your iPhone's <strong>Settings</strong> app.</li>
+                                    <li>Tap your <strong>Name / Apple ID</strong> banner at the very top.</li>
+                                    <li>Tap <strong>Subscriptions</strong>.</li>
+                                    <li>Find and tap <strong>Calivio</strong>.</li>
+                                    <li>Tap <strong>Cancel Subscription</strong> (or select an alternate billing tier).</li>
+                                </ol>
+                                You will retain full access to Pro features until the end of your current paid billing period.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>How does AI food and barcode recognition work?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                <p>Calivio utilizes specialized computer vision and food nutrition models to classify foods and estimate portion sizes. Simply tap the camera button inside the app and point your lens at your meal.</p>
+                                <p>For packaged foods, point the camera directly at the UPC / EAN barcode for instant 100% verified nutrition facts from our global food database.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>How can I delete my account and data?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                <p>You have full autonomy over your data:</p>
+                                <ul>
+                                    <li><strong>In-App:</strong> Go to <em>Settings &gt; Account &gt; Delete Account</em> and confirm. Your cloud profile, credentials, and synced food entries are immediately and permanently erased from our servers.</li>
+                                    <li><strong>Local Data:</strong> To delete cached logs stored locally on your device, simply delete the Calivio app from your iPhone.</li>
+                                    <li><strong>Support Request:</strong> You can also email <a href="mailto:mrb@mehraab.ninja?subject=Calivio%20Data%20Deletion%20Request">mrb@mehraab.ninja</a> with your account email address.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>How do I request a refund for an App Store purchase?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                All in-app financial transactions and subscriptions are processed by Apple. App developers do not have access to your credit card or billing portal. To request a refund, visit Apple's official refund portal at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>, sign in with your Apple ID, locate Calivio, and choose "Request a refund".
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-accordion-item">
+                        <button class="faq-question-btn" aria-expanded="false">
+                            <span>Does Calivio work offline without an active internet connection?</span>
+                            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="faq-answer-content">
+                            <div class="faq-answer-body">
+                                Yes. You can manually log meals, track macros, view past history, and synchronize with Apple HealthKit completely offline. Any cloud sync operations will automatically queue and resume seamlessly once your device reconnects to Wi-Fi or cellular data.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <h2 style="margin-top: 60px;">Contact Us</h2>
-            <p>Can't find the answer you're looking for? Our dedicated support team is here to assist you.</p>
-            <p><strong>Email:</strong> <a href="mailto:support@calivio.com">support@calivio.com</a></p>
-            <p><strong>Response Time:</strong> We strive to respond to all inquiries within 24 hours during standard business days.</p>
+        <!-- Direct Contact Info Banner -->
+        <section class="container" style="padding-bottom: 80px;">
+            <div class="callout-box" style="margin-top: 40px; justify-content: center; text-align: center; flex-direction: column; align-items: center;">
+                <div class="callout-icon" style="margin-bottom: 8px;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </div>
+                <h3 style="color: var(--text-white); margin-bottom: 6px;">Need Further Assistance?</h3>
+                <p style="color: var(--text-secondary); max-width: 500px; margin-bottom: 16px;">We typically respond to all developer and customer support emails within 24 hours.</p>
+                <a href="mailto:mrb@mehraab.ninja" class="secondary-btn">Email Mehraab Singh (Developer) &rarr;</a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="support.html">Support</a>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-link">
+                        <div class="brand-icon">
+                            <img src="assets/calivio-icon.png" alt="Calivio App Icon" width="34" height="34">
+                        </div>
+                        <span>Calivio</span>
+                    </a>
+                    <p class="footer-tagline">AI-Powered Calorie & Nutrition Tracker for iOS. Developed with passion for privacy and health by Mehraab Singh.</p>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Navigation</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="https://apps.apple.com/app/calivio/id6775261027" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Legal & Policy</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="terms.html#eula">Standard Apple EULA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-col">
+                    <h5>Support & Contact</h5>
+                    <ul class="footer-links-list">
+                        <li><a href="support.html">Customer Support</a></li>
+                        <li><a href="support.html#faq">FAQ & Help</a></li>
+                        <li><a href="mailto:mrb@mehraab.ninja">mrb@mehraab.ninja</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-copyright">
-                &copy; 2026 Calivio Inc. All rights reserved.
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Mehraab Singh. All rights reserved.</div>
+                <div class="footer-compliance-note">Apple, the Apple logo, iPhone, and HealthKit are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</div>
             </div>
         </div>
     </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
